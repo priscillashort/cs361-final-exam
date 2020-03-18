@@ -7,4 +7,5 @@ class RollPack
   def price
   @price
   end
+  
 end
