@@ -11,8 +11,8 @@ class RoadBike
     puts "Cleaning..."
   end
 
-  def lubricate_gears
-    puts "Lubricating gears..."
+  def do_maintenence
+    lubricate_gears
   end
 
   def total_price
@@ -23,6 +23,12 @@ class RoadBike
     total_price = 0
     luggage.each {|pannier| total_price += pannier.price}
     total_price
+  end
+
+  private
+
+  def lubricate_gears
+    puts "Lubricating gears..."
   end
 
   def luggage

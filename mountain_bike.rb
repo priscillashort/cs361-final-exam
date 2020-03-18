@@ -13,12 +13,22 @@ class MountainBike
     puts "Cleaning..."
   end
 
-  def adjust_suspension
-    puts "Adjusting suspension..."
+  def do_maintenence
+    adjust_suspension
   end
 
   def total_price
-    weekly_rate + luggage.price
+    weekly_rate + luggage_price
+  end
+
+  def luggage_price
+    luggage.price
+  end
+
+  private
+
+  def adjust_suspension
+    puts "Adjusting suspension..."
   end
 
   def luggage

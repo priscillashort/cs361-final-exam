@@ -13,12 +13,22 @@ class BmxBike
     puts "Cleaning..."
   end
 
-  def adjust_seat
-    puts "Adjusting seat..."
+  def do_maintenence
+    adjust_seat
   end
 
   def total_price
     weekly_rate + luggage.price
+  end
+
+  def luggage_price
+    luggage.price
+  end
+
+  private
+
+  def adjust_seat
+    puts "Adjusting seat..."
   end
 
   def luggage
