@@ -17,6 +17,10 @@ class BmxBike
     puts "Adjusting seat..."
   end
 
+  def total_price
+    weekly_rate + luggage.cost
+  end
+
   def luggage
     @luggage
   end

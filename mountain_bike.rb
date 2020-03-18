@@ -17,6 +17,10 @@ class MountainBike
     puts "Adjusting suspension..."
   end
 
+  def total_price
+    weekly_rate + luggage.price
+  end
+
   def luggage
     @luggage
   end

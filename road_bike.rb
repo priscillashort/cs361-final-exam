@@ -15,6 +15,10 @@ class RoadBike
     puts "Lubricating gears..."
   end
 
+  def total_price
+    (daily_rate * 7) + panniers[0].price + panniers[1].price
+  end
+
   def panniers
     @panniers
   end
