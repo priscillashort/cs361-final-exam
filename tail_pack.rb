@@ -1,11 +1,11 @@
 class TailPack
 
   def initialize
-    @cost = 2
+    @price = 2
   end
 
-  def cost
-    @cost
+  def price
+    @price
   end
 
 end

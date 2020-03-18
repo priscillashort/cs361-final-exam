@@ -18,7 +18,7 @@ class BmxBike
   end
 
   def total_price
-    weekly_rate + luggage.cost
+    weekly_rate + luggage.price
   end
 
   def luggage

@@ -3,7 +3,7 @@ require_relative 'pannier'
 class RoadBike
 
   def initialize
-    @panniers = [Pannier.new, Pannier.new]
+    @luggage = [Pannier.new, Pannier.new]
     @daily_rate = 15
   end
 
@@ -16,11 +16,17 @@ class RoadBike
   end
 
   def total_price
-    (daily_rate * 7) + panniers[0].price + panniers[1].price
+    (daily_rate * 7) + luggage_price
   end
 
-  def panniers
-    @panniers
+  def luggage_price
+    total_price = 0
+    luggage.each {|pannier| total_price += pannier.price}
+    total_price
+  end
+
+  def luggage
+    @luggage
   end
 
   def daily_rate
